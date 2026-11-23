@@ -1,0 +1,28 @@
+{
+  "timeout": 6,
+  "telegram": {
+    "token_file": "token.txt",
+    "chat_id": "ISI_CHAT_ID_KAMU"
+  },
+  "hosts": [
+    {
+      "name": "vps-1",
+      "ip": "1.2.3.4",
+      "port": 22,
+      "role": "deskripsi singkat host",
+      "lease_end": "2026-12-31",
+      "mute_down": false,
+      "remind_hours": 0,
+      "enabled": true
+    },
+    {
+      "name": "vps-mati-yang-sudah-tahu",
+      "ip": "5.6.7.8",
+      "port": 22,
+      "role": "host mati lama, jangan di-alert",
+      "lease_end": null,
+      "mute_down": true,
+      "enabled": true
+    }
+  ]
+}

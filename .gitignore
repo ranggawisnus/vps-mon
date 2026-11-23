@@ -1,0 +1,5 @@
+config.json
+token.txt
+vps.db
+*.log
+__pycache__/
