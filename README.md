@@ -5,6 +5,26 @@ Python **stdlib only** (zero dependency), jalan via cron, cocok untuk VPS kecil/
 
 ![license](https://img.shields.io/badge/license-MIT-blue) ![python](https://img.shields.io/badge/python-3.8+-green)
 
+## 🤖 Install pakai AI
+
+Copy-paste prompt ini ke AI coding agent kamu (Claude Code, Cursor, Codex, Hermes, dsb.) —
+dia akan membaca [AGENT.md](AGENT.md) di repo dan memandu instalasi sampai alert masuk Telegram:
+
+```text
+Clone https://github.com/ranggawisnus/vps-mon dan pasang di server ini.
+Baca AGENT.md di dalam repo lalu ikuti langkah-langkahnya:
+1. Jalankan setup wizard (bash setup.sh); minta token bot Telegram saya
+   kalau saya belum punya (buat via @BotFather).
+2. Daftarkan VPS yang ada di server ini beserta tanggal habis sewanya
+   kalau saya tahu.
+3. Tes alert ke Telegram saya, lalu pasang cron (check per menit +
+   digest harian).
+Patuhi bagian "Aturan keselamatan" di AGENT.md — jangan pernah commit
+atau menampilkan config.json, token.txt, atau vps.db.
+```
+
+Tanpa AI? Setup manual ada di bawah. 👇
+
 ## Fitur
 
 - ✅ **Alive check** per menit (TCP connect ke port SSH) → SQLite
