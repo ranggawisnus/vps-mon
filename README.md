@@ -17,6 +17,24 @@ Python **stdlib only** (zero dependency), jalan via cron, cocok untuk VPS kecil/
 
 ## Setup
 
+### Cara cepat (wizard interaktif)
+
+```bash
+git clone https://github.com/ranggawisnus/vps-mon.git && cd vps-mon
+bash setup.sh
+```
+
+Wizard akan: validasi token bot -> deteksi chat id Telegram otomatis -> input daftar VPS ->
+tes kirim alert -> pasang cron. Selesai.
+
+Headless/CI (tanpa prompt):
+
+```bash
+VPSMON_TOKEN="123:ABC" VPSMON_CHAT_ID="67890" bash setup.sh
+```
+
+### Cara manual
+
 ```bash
 # 1. Salin contoh config, isi host + chat id telegram kamu
 cp config.example.json config.json
