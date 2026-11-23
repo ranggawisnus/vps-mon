@@ -43,7 +43,7 @@ def db():
 
 def tg_send(text: str) -> bool:
     tf = BASE / CFG["telegram"].get("token_file", "token.txt")
-    tok = tf.read_text().strip()
+    tok = tf.read_text().strip().replace("\r", "").replace("\n", "").replace(" ", "")
     chat = CFG["telegram"]["chat_id"]
     data = urllib.parse.urlencode({"chat_id": chat, "text": text, "parse_mode": "HTML",
                                    "disable_web_page_preview": "true"}).encode()
